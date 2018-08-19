@@ -23,7 +23,7 @@ print(syn1)
 for j in range(60000):
 	layer_one = 1/(1+np.exp(-(np.dot(X,syn0)))) # sigmoid activation
 	layer_two = 1/(1+np.exp(-(np.dot(layer_one,syn1))))
-	layer_two_delta = (y - layer_two)*(layer_two*(1-layer_two))
+	layer_two_delta = (y - layer_two)*(layer_two*(1-layer_two)) # gradient of the sigmoid function = X * (1 - X)
 	layer_one_delta = layer_two_delta.dot(syn1.T) * (layer_one * (1-layer_one))
 	syn1 += layer_one.T.dot(layer_two_delta)
 	syn0 += X.T.dot(layer_one_delta)
