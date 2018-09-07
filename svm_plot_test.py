@@ -17,6 +17,6 @@ for d, sample in enumerate(X):
 		plt.scatter(sample[0], sample[1], s=120, marker='+', linewidths=2)
 
 plt.plot([-2, 6], [6, 0.5]) # plots a line
-plt.xlabel("Gagan")
-plt.ylabel("Akash")
+plt.xlabel("Apples")
+plt.ylabel("Oranges")
 plt.show()
