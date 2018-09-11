@@ -32,6 +32,6 @@ print (error)
 print ("guess error")
 print (delta_m)'''
 #result = m * f_test
-print ((m * f_test) - 17.78)     
+print ((m * f_test) - 17.78) #  the 17.78 part is a hack as of now  
 #c_test = int(m * f_test) # - 17.78
 #print (c_test)
